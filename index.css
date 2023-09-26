@@ -11,19 +11,21 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #edf1f4;
+    background-image: url("background.png");
+    background-size: cover;
 }
 .login {
     position: relative;
     width: 380px;
     padding: 80px 50px 50px;
-    box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px #fffb;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    background-color: #edf1f4;
 }
 .finger-image {
     height: 70px;
@@ -70,6 +72,16 @@ body {
 .login form label {
     display: flex;
     align-items: center;
+}
+.login form p {
+    color: rgb(107, 104, 107);
+    font-size: 14px;
+    margin: 9px;
+    margin-right: auto;
+}
+.login form p a:hover {
+    color: #0082bc;
+    text-decoration: underline;
 }
 .login form input[type="checkbox"] {
     margin-right: 5px;
